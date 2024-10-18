@@ -1773,6 +1773,17 @@ add_fp_unittest(
 )
 
 add_fp_unittest(
+  logf16_test
+  NEED_MPFR
+  SUITE
+    libc-math-unittests
+  SRCS
+    logf16_test.cpp
+  DEPENDS
+    libc.src.math.logf16
+)
+
+add_fp_unittest(
 log2_test
  NEED_MPFR
  SUITE
@@ -1917,6 +1928,17 @@ add_fp_unittest(
 )
 
 add_fp_unittest(
+  coshf16_test
+  NEED_MPFR
+  SUITE
+    libc-math-unittests
+  SRCS
+    coshf16_test.cpp
+  DEPENDS
+    libc.src.math.coshf16
+)
+
+add_fp_unittest(
   sinhf_test
   NEED_MPFR
   SUITE
@@ -1933,6 +1955,17 @@ add_fp_unittest(
 )
 
 add_fp_unittest(
+  sinhf16_test
+  NEED_MPFR
+  SUITE
+    libc-math-unittests
+  SRCS
+    sinhf16_test.cpp
+  DEPENDS
+    libc.src.math.sinhf16
+)
+
+add_fp_unittest(
   tanhf_test
   NEED_MPFR
   SUITE
@@ -1942,6 +1975,17 @@ add_fp_unittest(
   DEPENDS
     libc.src.math.tanhf
     libc.src.__support.FPUtil.fp_bits
+)
+
+add_fp_unittest(
+  tanhf16_test
+  NEED_MPFR
+  SUITE
+    libc-math-unittests
+  SRCS
+    tanhf16_test.cpp
+  DEPENDS
+    libc.src.math.tanhf16
 )
 
 add_fp_unittest(
